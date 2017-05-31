@@ -110,12 +110,7 @@ border: 1px solid black;
 background:white;
 }
 
-#logo
-{
-	position: relative;
-	width:150px;
-	height: 110px;
-}
+
 #a
 {
 width:100%;
@@ -123,61 +118,4 @@ height:1000px;
 border: 2px solid black;
 background:darkcyan;
 
-}
-#fb
-{
-	position: relative;
-	left:990px;
-	top:10px;
-	
-}
-#gg
-{
-	position: relative;
-	left:1000px;
-	top:10px;
-	
-}
-#tww
-{
-	position: relative;
-	left:1010px;
-	top:10px;
-	
-}
-
-#sup
-{
-	position: relative;
-	left:890px;
-	text-decoration:none;
-	color:white;
-	
-}
-#siup
-{
-	position: relative;
-	left:900px;
-	
-	color:white;
-	
-}
-#siin
-{
-	position: relative;
-	left:970px;
-	color:white;
-	
-}
-#sin
-{
-	position: relative;
-	left:920px;
-	text-decoration:none;
-	color:white;
-}
-#about
-{
-	color:white;
-	text-decoration:none;
 }

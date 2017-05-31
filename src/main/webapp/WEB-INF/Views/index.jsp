@@ -1,86 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="./resources/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      height:200px;
+  }
+  
+ 
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
 </head>
 <body>
-<div id="h">
-  <jsp:include page="header.jsp"/>
-</div>
-<div id="b">
-  <div id="cont" class="container">
-  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href=" "><img src="./resources/images/logo.png" style="width:75px;height:50px;position:relative;top:-15px;left:0px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href=" ">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="add">Adding</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="CategoryList">CategoryList</a></li>
+         <li><a href="SupplierList">SupplierList</a></li>
+         <li><a href="ProductList">ProductList</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login"><span class="glyphicon glyphicon-log-in"></span>SignIn</a></li>
+         <li><a href="registration"><span class="glyphicon glyphicon-log-in"></span>SignUp</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
-    
-    <div class="carousel-inner">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
       <div class="item active">
-         <img class="mySlides" src="./resources/images/sld1.jpg" style="width:100% ;height:320px">
+        <img class="im" src="./resources/images/sld1.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
       </div>
 
       <div class="item">
-         <img class="mySlides" src="./resources/images/sld2.jpg" style="width:100% ;height:320px">
+        <img class="im" src="./resources/images/sld2.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
       </div>
-    
-      
       <div class="item">
-         <img class="mySlides" src="./resources/images/sld4.jpg" style="width:100% ;height:320px">
+        <img class="im" src="./resources/images/sld4.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
       </div>
       <div class="item">
-         <img class="mySlides" src="./resources/images/sld5.jpg" style="width:100% ;height:320px">
+        <img class="im" src="./resources/images/sld5.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
       </div>
-      
     </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
 </div>
-</div>
-<div id="c">
-  <a href="ProductDetails"><img id="tv1" src="./resources/images/TV1.jpg"></a>
-
-<img id="tv2" src="./resources/images/TV2.jpg">
-  <img id="tv3" src="./resources/images/TV3.jpg">
-  <img id="tv4" src="./resources/images/tv4.jpg">
-  <img id="tv5" src="./resources/images/tv5.jpg">
-  <img id="tv6" src="./resources/images/tv6.jpg">
-  <img id="tv7" src="./resources/images/tv7.jpg">
   
-  <img id="tv9" src="./resources/images/tv9.jpg">
-  <img id="tv10" src="./resources/images/tv10.jpg">
-  <img id="tv11" src="./resources/images/tv11.jpg">
-  <img id="tv12" src="./resources/images/tv12.jpg">
-  <img id="tv13" src="./resources/images/tv13.jpg">
-  <img id="tv14" src="./resources/images/tv14.jpg">
-  <img id="tv15" src="./resources/images/tv15.jpg">
-</div>
+<div class="container text-center">    
+  <h3>What We Sale</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="./resources/images/tvv.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <h4>SONY</h4>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="./resources/images/tv7.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <h4>LG</h4>    
+    </div>
+      <div class="col-sm-4"> 
+      <img src="./resources/images/tv5.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <h4>SAMSUNG</h4>    
+    </div>
+    <!-- <div class="col-sm-4">
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+    </div> -->
+  </div>
+</div><br>
 
-<div id="f">
-<jsp:include page="footer.jsp"/>
-</div>
+<footer class="container-fluid text-center">
 
-
+</footer>
 
 </body>
 </html>
- 

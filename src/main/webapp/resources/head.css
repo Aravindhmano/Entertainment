@@ -1,45 +1,47 @@
 #h
 {
-width: 100%;
+width: auto;
 height:100px;
 border:1px solid red;	
 background:darkcyan;
 }
 #logo
 {
+	display :inline;
 	position: relative;
 	width:150px;
 	height: 100px;
-	
-
 }
 #sup
 {
+	display:inline;
 	position: relative;
-	left:890px;
+	left:400px;
 	text-decoration:none;
 	color:white;
 	
 }
 #siup
 {
+	display:inline;
 	position: relative;
-	left:900px;
-	
+	left:600px;
 	color:white;
 	
 }
 #siin
 {
+	display:inline;
 	position: relative;
-	left:970px;
+	left:400px;
 	color:white;
 	
 }
 #sin
 {
+	display:inline;
 	position: relative;
-	left:920px;
+	left:400	px;
 	text-decoration:none;
 	color:white;
 }

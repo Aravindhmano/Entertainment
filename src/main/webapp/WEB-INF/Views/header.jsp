@@ -11,6 +11,8 @@
 <body>
 <div id="h">
   <a href="index"><img id="logo" src="./resources/images/logo.png"></a>
+  <a href="ProductList"><button style="color:white">ProductList</button></a>
+  <a href="Adding"><button style="color:white">ADD</button></a>
 <select id="select">
   <option>Shop By Brand</option>
   <option>LG</option>

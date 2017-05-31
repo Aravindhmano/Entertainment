@@ -1,6 +1,6 @@
 #f
 {
-width: 100%;
+width: auto;
 height:100px;
 border:1px solid red;	
 background:darkcyan;
@@ -8,58 +8,29 @@ background:darkcyan;
 #fb
 {
 	position: relative;
-	left:1030px;
+	left:1000px;
 	top:10px;
 	
 }
 #gg
 {
 	position: relative;
-	left:1050px;
+	left:1010px;
 	top:10px;
 	
 }
 #tww
 {
 	position: relative;
-	left:1070px;
+	left:1020px;
 	top:10px;
 	
 }
 
-#sup
-{
-	position: relative;
-	left:890px;
-	text-decoration:none;
-	color:white;
-	
-}
-#siup
-{
-	position: relative;
-	left:900px;
-	
-	color:white;
-	
-}
-#siin
-{
-	position: relative;
-	left:970px;
-	color:white;
-	
-}
-#sin
-{
-	position: relative;
-	left:920px;
-	text-decoration:none;
-	color:white;
-}
 
 #about
 {
 	color:white;
 	text-decoration:none;
+	left:20px;
 }
